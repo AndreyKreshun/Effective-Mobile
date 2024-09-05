@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Иконка -->
+    <ImageView
+        android:id="@+id/recommendation_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Заголовок"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:maxLines="3"
+        android:ellipsize="end" />
+
+    <!-- Выделенный текст -->
+    <TextView
+        android:id="@+id/highlighted_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выделенный текст"
+
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <!-- Главный экран -->
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.effectivemobile.MainFragment"
+        android:label="Главная"
+        tools:layout="@layout/fragment_main">
+        <!-- Переходы на другие экраны можно указать здесь, если они инициируются из MainFragment -->
+        <action
+            android:id="@+id/action_mainFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_applyFragment"
+            app:destination="@id/applyFragment" />
+    </fragment>
+
+    <!-- Экран избранного -->
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.effectivemobile.FavoritesFragment"
+        android:label="Избранное"
+        tools:layout="@layout/fragment_favorites">
+        <!-- Переходы на другие экраны из FavoritesFragment -->
+        <action
+            android:id="@+id/action_favoritesFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_favoritesFragment_to_applyFragment"
+            app:destination="@id/applyFragment" />
+    </fragment>
+
+    <!-- Экран отклика на вакансию -->
+    <fragment
+        android:id="@+id/applyFragment"
+        android:name="com.example.effectivemobile.ApplyFragment"
+        android:label="Отклик"
+        tools:layout="@layout/fragment_apply">
+        <!-- Переходы на другие экраны из ApplyFragment -->
+        <action
+            android:id="@+id/action_applyFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_applyFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+
+    <!-- Добавьте другие фрагменты и действия по мере необходимости -->
+</navigation>

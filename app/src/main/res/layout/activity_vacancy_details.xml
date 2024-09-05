@@ -1,0 +1,175 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Иконки Назад, Глаз, Шаринг -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/icon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:id="@+id/icon_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/icon_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/vacancy_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:text="Заголовок вакансии"/>
+
+        <!-- Название компании и иконка проверенности -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Название компании"
+                android:textAppearance="?attr/textAppearanceBody1"/>
+
+            <ImageView
+                android:id="@+id/company_verified_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <!-- Уровень дохода -->
+        <TextView
+            android:id="@+id/salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:text="Уровень дохода"/>
+
+        <!-- Опыт -->
+        <TextView
+            android:id="@+id/experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Требуемый опыт: "/>
+
+        <!-- Тип занятости -->
+        <TextView
+            android:id="@+id/employment_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Тип занятости"/>
+
+        <!-- Сколько человек откликнулось -->
+        <TextView
+            android:id="@+id/applied_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text=""/>
+
+        <!-- Сколько человек просматривает -->
+        <TextView
+            android:id="@+id/looking_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text=""/>
+
+        <!-- Адрес компании -->
+        <TextView
+            android:id="@+id/company_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Адрес компании"/>
+
+        <!-- Описание компании -->
+        <TextView
+            android:id="@+id/company_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Описание компании"/>
+
+        <!-- Заголовок "Ваши задачи" -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ваши задачи"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Обязанности -->
+        <TextView
+            android:id="@+id/responsibilities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Обязанности"/>
+
+        <!-- Заголовок "Задайте вопрос работодателю" -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Задайте вопрос работодателю"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Текст "Он получит его с откликом на вакансию" -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Он получит его с откликом на вакансию"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Вопросы -->
+        <LinearLayout
+            android:id="@+id/questions_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Кнопка "Откликнуться" -->
+
+        <!-- Иконка добавления в избранное -->
+        <Button
+            android:id="@+id/apply_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#4CB24E"
+            android:text="Откликнуться" />
+
+        <ImageView
+            android:id="@+id/icon_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

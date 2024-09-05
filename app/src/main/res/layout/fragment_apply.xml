@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Иконка -->
+    <ImageView
+        android:id="@+id/icon_apply"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+         />
+
+    <!-- Хардкодные текста -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Отправить отклик"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Вы уверены, что хотите отправить отклик на данную вакансию?"
+        android:textAlignment="center" />
+
+    <!-- Кнопка "Добавить сопроводительное" -->
+
+    <!-- Поле для ввода сопроводительного письма (изначально скрыто) -->
+    <Button
+        android:id="@+id/button_add_cover_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:text="Добавить сопроводительное"
+        android:textColor="#4CB24E" />
+
+    <EditText
+        android:id="@+id/cover_letter_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите сопроводительное письмо"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <!-- Кнопка "Откликнуться" -->
+    <Button
+        android:id="@+id/button_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Откликнуться"
+        android:backgroundTint="#4CB24E"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
